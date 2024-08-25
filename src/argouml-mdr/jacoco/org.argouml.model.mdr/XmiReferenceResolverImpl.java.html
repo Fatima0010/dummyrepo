@@ -396,7 +396,7 @@ class XmiReferenceResolverImpl extends XmiContext {
                 // TODO: This causes a network connection attempt for profiles
 <span class="fc" id="L397">                modelUrl = getValidURL(fixupURL(systemId));</span>
             }
-<span class="pc bpc" id="L399" title="1 of 2 branches missed.">            if (modelUrl == null) {</span>
+<span class="fc bfc" id="L399" title="All 2 branches covered.">            if (modelUrl == null) {</span>
                 // Try to find suffix in module list.
 <span class="fc" id="L401">                String modelUrlAsString = findModuleURL(suffix);</span>
 <span class="pc bpc" id="L402" title="1 of 2 branches missed.">                if (!(modelUrlAsString == null</span>
@@ -652,7 +652,7 @@ class XmiReferenceResolverImpl extends XmiContext {
 <span class="pc bpc" id="L652" title="1 of 2 branches missed.">        if (suffix.endsWith(&quot;.zargo&quot;)) {</span>
 <span class="nc" id="L653">            url = &quot;jar:&quot; + url + &quot;!/&quot;</span>
 <span class="nc" id="L654">                    + suffix.substring(0, suffix.length() - 6) + &quot;.xmi&quot;;</span>
-<span class="pc bpc" id="L655" title="3 of 4 branches missed.">        } else if (suffix.endsWith(&quot;.zip&quot;) || suffix.endsWith(&quot;.jar&quot;)) {</span>
+<span class="pc bpc" id="L655" title="1 of 4 branches missed.">        } else if (suffix.endsWith(&quot;.zip&quot;) || suffix.endsWith(&quot;.jar&quot;)) {</span>
 <span class="fc" id="L656">            url = &quot;jar:&quot; + url + &quot;!/&quot;</span>
 <span class="fc" id="L657">                    + suffix.substring(0, suffix.length() - 4);</span>
         }

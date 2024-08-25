@@ -357,9 +357,9 @@ public class MDRModelImplementation implements ModelImplementation {
     boolean isReadOnly(Object extent) {
 <span class="fc" id="L358">        synchronized (extents) {</span>
 <span class="fc" id="L359">            Extent result = extents.get(extent);</span>
-<span class="fc bfc" id="L360" title="All 2 branches covered.">            if (result == null) {</span>
+<span class="pc bpc" id="L360" title="1 of 2 branches missed.">            if (result == null) {</span>
 //                LOG.log(Level.WARNING, &quot;Unable to find extent &quot; + extent);
-<span class="fc" id="L362">                return false;</span>
+<span class="nc" id="L362">                return false;</span>
             }
 <span class="fc" id="L364">            return result.readOnly;</span>
         }

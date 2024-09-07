@@ -164,12 +164,12 @@ public class ClassdiagramLayouter implements Layouter {
 <span class="nc" id="L164">                ClassdiagramNode node = iter.next();</span>
                 // split =
                 //     (split == null || split.isStandalone()) ? node : split;
-<span class="nc bnc" id="L167" title="All 4 branches missed.">                split =</span>
-                    (split == null
+                split =
+<span class="nc bnc" id="L168" title="All 4 branches missed.">                    (split == null</span>
 <span class="nc bnc" id="L169" title="All 2 branches missed.">                            || (hasPackage &amp;&amp; split.isPackage() == hasPackage)</span>
 <span class="nc bnc" id="L170" title="All 2 branches missed.">                            || split.isStandalone())</span>
-                    ? node
-                    : split;
+<span class="nc" id="L171">                    ? node</span>
+<span class="nc" id="L172">                    : split;</span>
 <span class="nc" id="L173">                width += node.getSize().width + gap;</span>
 <span class="nc" id="L174">                count++;</span>
 <span class="nc" id="L175">            }</span>
@@ -587,9 +587,9 @@ public class ClassdiagramLayouter implements Layouter {
             }
 <span class="nc" id="L588">        }</span>
 <span class="nc bnc" id="L589" title="All 2 branches missed.">        for (ClassdiagramNode node : comments) {</span>
-<span class="nc" id="L590">            int rowInd =</span>
+            int rowInd =
 <span class="nc bnc" id="L591" title="All 2 branches missed.">                    node.getUpNodes().isEmpty()</span>
-                            ? 0
+<span class="nc" id="L592">                            ? 0</span>
 <span class="nc" id="L593">                            : ((node.getUpNodes().get(0)).getRank());</span>
             // Issue 6450
 <span class="nc bnc" id="L595" title="All 2 branches missed.">            if (nodeRows.size() == 0) {</span>

@@ -106,10 +106,10 @@ public class PathComparator implements Comparator {
 <span class="fc" id="L106">            name1 = Model.getFacade().getName(o1);</span>
 <span class="fc" id="L107">            name2 = Model.getFacade().getName(o2);</span>
 <span class="nc" id="L108">        } catch (IllegalArgumentException e) {</span>
-<span class="nc bnc" id="L109" title="All 2 branches missed.">            throw new ClassCastException(</span>
+<span class="nc" id="L109">            throw new ClassCastException(</span>
                 &quot;Model element or String required&quot; 
 <span class="nc bnc" id="L111" title="All 2 branches missed.">                    + &quot;\n - o1 = &quot; + ((o1 == null) ? &quot;(null)&quot; : o1.toString()) </span>
-<span class="nc" id="L112">                    + &quot;\n - o2 = &quot; + ((o2 == null) ? &quot;(null)&quot; : o2.toString()));</span>
+<span class="nc bnc" id="L112" title="All 2 branches missed.">                    + &quot;\n - o2 = &quot; + ((o2 == null) ? &quot;(null)&quot; : o2.toString()));</span>
 <span class="fc" id="L113">        }</span>
 <span class="fc bfc" id="L114" title="All 4 branches covered.">        if (name1 != null &amp;&amp; name2 != null) {</span>
 <span class="fc" id="L115">            int comparison = collator.compare(name1, name2);</span>

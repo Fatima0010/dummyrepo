@@ -252,10 +252,10 @@ import org.argouml.util.MyTokenizer;
 <span class="nc bnc" id="L252" title="All 2 branches missed.">		for (Iterator iter = comments.iterator(); iter.hasNext();) {</span>
 <span class="nc" id="L253">		    Object c = iter.next();</span>
 <span class="nc" id="L254">		    String s = Model.getFacade().getName(c);</span>
-<span class="nc bnc" id="L255" title="All 2 branches missed.">		    nlcount = appendComment(result,</span>
+<span class="nc" id="L255">		    nlcount = appendComment(result,</span>
 					    prefix,
 					    s,
-					    nlcount &gt; 1 ? 0 : 1);
+<span class="nc bnc" id="L258" title="All 2 branches missed.">					    nlcount &gt; 1 ? 0 : 1);</span>
 <span class="nc" id="L259">		}</span>
 <span class="nc" id="L260">	    } else {</span>
 <span class="nc" id="L261">		return &quot;&quot;;</span>

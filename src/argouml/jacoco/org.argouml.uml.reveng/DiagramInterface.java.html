@@ -268,9 +268,9 @@ public class DiagramInterface {
 <span class="nc bnc" id="L268" title="All 2 branches missed.">        if (currentProject == null) {</span>
 <span class="nc" id="L269">            throw new RuntimeException(&quot;current project not set yet&quot;);</span>
         }
-<span class="nc bnc" id="L271" title="All 2 branches missed.">        ArgoDiagram d = DiagramFactory.getInstance().createDiagram(</span>
+<span class="nc" id="L271">        ArgoDiagram d = DiagramFactory.getInstance().createDiagram(</span>
                 DiagramFactory.DiagramType.Class,
-<span class="nc" id="L273">                ns == null ? currentProject.getRoot() : ns, null);</span>
+<span class="nc bnc" id="L273" title="All 2 branches missed.">                ns == null ? currentProject.getRoot() : ns, null);</span>
 
         try {
 <span class="nc" id="L276">            d.setName(getDiagramName(name));</span>

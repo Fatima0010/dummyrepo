@@ -71,8 +71,8 @@ public abstract class AbstractActionNavigate extends UndoableAction
      * @param hasIcon true if there is an icon for this action
      */
     public AbstractActionNavigate(String key, boolean hasIcon) {
-<span class="pc bpc" id="L74" title="1 of 2 branches missed.">        super(Translator.localize(key),</span>
-<span class="pc" id="L75">        		hasIcon ? ResourceLoaderWrapper.lookupIcon(key) : null);</span>
+<span class="fc" id="L74">        super(Translator.localize(key),</span>
+<span class="pc bpc" id="L75" title="1 of 2 branches missed.">        		hasIcon ? ResourceLoaderWrapper.lookupIcon(key) : null);</span>
         // Set the tooltip string:
 <span class="fc" id="L77">        putValue(Action.SHORT_DESCRIPTION, </span>
 <span class="fc" id="L78">                Translator.localize(key));</span>

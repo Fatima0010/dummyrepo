@@ -223,18 +223,18 @@ public class ExplorerPopup extends JPopupMenu {
                 activeDiagram instanceof SequenceDiagram;
 <span class="nc" id="L224">            final boolean stateDiagramActive =</span>
                 activeDiagram instanceof UMLStateDiagram;
-<span class="nc bnc" id="L226" title="All 2 branches missed.">            final Object selectedStateMachine =</span>
-                (stateVertexSelected) ? Model
+            final Object selectedStateMachine =
+<span class="nc bnc" id="L227" title="All 2 branches missed.">                (stateVertexSelected) ? Model</span>
 <span class="nc" id="L228">                    .getStateMachinesHelper().getStateMachine(selectedItem)</span>
-                    : null;
-<span class="nc bnc" id="L230" title="All 2 branches missed.">            final Object diagramStateMachine =</span>
-                (stateDiagramActive) ? ((UMLStateDiagram) activeDiagram)
+<span class="nc" id="L229">                    : null;</span>
+            final Object diagramStateMachine =
+<span class="nc bnc" id="L231" title="All 2 branches missed.">                (stateDiagramActive) ? ((UMLStateDiagram) activeDiagram)</span>
 <span class="nc" id="L232">                    .getStateMachine()</span>
-                    : null;
-<span class="nc bnc" id="L234" title="All 2 branches missed.">            final Object diagramActivity =</span>
-                (activityDiagramActive)
+<span class="nc" id="L233">                    : null;</span>
+            final Object diagramActivity =
+<span class="nc bnc" id="L235" title="All 2 branches missed.">                (activityDiagramActive)</span>
 <span class="nc" id="L236">                    ? ((UMLActivityDiagram) activeDiagram).getStateMachine()</span>
-                    : null;
+<span class="nc" id="L237">                    : null;</span>
 
             Collection projectModels =
 <span class="nc" id="L240">                ProjectManager.getManager().getCurrentProject().getModels();</span>

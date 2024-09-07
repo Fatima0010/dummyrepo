@@ -325,15 +325,15 @@ public class MDRModelImplementation implements ModelImplementation {
 <span class="fc" id="L325">                    String name = extents.remove(extent).name;</span>
 <span class="pc bpc" id="L326" title="1 of 2 branches missed.">                    if (public2SystemIds.remove(name) == null) {</span>
 <span class="pc bpc" id="L327" title="1 of 2 branches missed.">                        if (!&quot;model extent&quot;.equals(name)) {</span>
-<span class="nc bnc" id="L328" title="All 2 branches missed.">                            LOG.log(Level.WARNING, &quot;No system id found for extent &quot;</span>
-                                    + (name == null ? &quot;&quot; : name) + &quot; : &quot;
+<span class="nc" id="L328">                            LOG.log(Level.WARNING, &quot;No system id found for extent &quot;</span>
+<span class="nc bnc" id="L329" title="All 2 branches missed.">                                    + (name == null ? &quot;&quot; : name) + &quot; : &quot;</span>
                                     + extent);
                         }
                     }
 <span class="pc bpc" id="L333" title="1 of 2 branches missed.">                    if (idToObject.remove(name) == null) {</span>
 <span class="pc bpc" id="L334" title="1 of 2 branches missed.">                        if (!&quot;model extent&quot;.equals(name)) {</span>
-<span class="nc bnc" id="L335" title="All 2 branches missed.">                            LOG.log(Level.WARNING, &quot;No ID map found for extent &quot;</span>
-                                    + (name == null ? &quot;&quot; : name) + &quot; : &quot;
+<span class="nc" id="L335">                            LOG.log(Level.WARNING, &quot;No ID map found for extent &quot;</span>
+<span class="nc bnc" id="L336" title="All 2 branches missed.">                                    + (name == null ? &quot;&quot; : name) + &quot; : &quot;</span>
                                     + extent);
                         }
                     }

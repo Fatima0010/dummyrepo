@@ -241,10 +241,10 @@ public class TransitionNotationUml extends TransitionNotation {
                     /* Do not set the name. */
                 }
 <span class="fc bfc" id="L243" title="All 2 branches covered.">                if (callEvent) { // operation(paramlist)</span>
-<span class="fc" id="L244">                    String triggerName =</span>
+                    String triggerName =
 <span class="pc bpc" id="L245" title="1 of 2 branches missed.">                        trigger.indexOf(&quot;(&quot;) &gt; 0</span>
-<span class="pc" id="L246">                        ? trigger.substring(0, trigger.indexOf(&quot;(&quot;)).trim()</span>
-                        : trigger;
+<span class="fc" id="L246">                        ? trigger.substring(0, trigger.indexOf(&quot;(&quot;)).trim()</span>
+<span class="pc" id="L247">                        : trigger;</span>
                     /* This case is a bit different, because of the parameters. 
                      * If the event already exists, the parameters are ignored. */
 <span class="fc" id="L250">                    evt = findCallEvent(triggerName, ns);</span>
@@ -304,10 +304,10 @@ public class TransitionNotationUml extends TransitionNotation {
 <span class="pc bpc" id="L304" title="1 of 2 branches missed.">                if (callEvent) {</span>
 <span class="nc bnc" id="L305" title="All 2 branches missed.">                    if (Model.getFacade().isACallEvent(evt)) {</span>
                         /* Just change the Name and linked operation */
-<span class="nc" id="L307">                        String triggerName =</span>
+                        String triggerName =
 <span class="nc bnc" id="L308" title="All 2 branches missed.">                            trigger.indexOf(&quot;(&quot;) &gt; 0</span>
 <span class="nc" id="L309">                            ? trigger.substring(0, trigger.indexOf(&quot;(&quot;)).trim()</span>
-                                    : trigger;
+<span class="nc" id="L310">                                    : trigger;</span>
 <span class="nc" id="L311">                        if (!Model.getFacade().getName(evt)</span>
 <span class="nc bnc" id="L312" title="All 2 branches missed.">                                .equals(triggerName)) {</span>
 <span class="nc" id="L313">                            Model.getCoreHelper().setName(evt, triggerName);</span>

@@ -276,8 +276,8 @@ class ClassdiagramNode implements LayoutedNode, Comparable {
     public int getLevel() {
 <span class="nc" id="L277">        int result = 0;</span>
 <span class="nc bnc" id="L278" title="All 2 branches missed.">        for (ClassdiagramNode node : uplinks) {</span>
-<span class="nc bnc" id="L279" title="All 2 branches missed.">            result =</span>
-<span class="nc" id="L280">                    (node == this) ? result : Math.max(</span>
+            result =
+<span class="nc bnc" id="L280" title="All 2 branches missed.">                    (node == this) ? result : Math.max(</span>
 <span class="nc" id="L281">                            node.getLevel() + 1, result);</span>
 <span class="nc" id="L282">        }</span>
 <span class="nc" id="L283">        return result;</span>

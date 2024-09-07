@@ -360,10 +360,10 @@ public abstract class ConfigurationHandler {
                                     boolean defaultValue) {
 <span class="fc" id="L361">        loadIfNecessary();</span>
 <span class="fc" id="L362">        Boolean dflt = Boolean.valueOf(defaultValue);</span>
-<span class="pc bpc" id="L363" title="1 of 2 branches missed.">        Boolean b =</span>
-            key != null
-<span class="pc" id="L365">            ? Boolean.valueOf(getValue(key.getKey(), dflt.toString()))</span>
-            : dflt;
+        Boolean b =
+<span class="pc bpc" id="L364" title="1 of 2 branches missed.">            key != null</span>
+<span class="fc" id="L365">            ? Boolean.valueOf(getValue(key.getKey(), dflt.toString()))</span>
+<span class="pc" id="L366">            : dflt;</span>
 <span class="fc" id="L367">        return b.booleanValue();</span>
     }
 

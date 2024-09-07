@@ -73,7 +73,7 @@ class FigNameWithAbstract extends FigSingleLineText {
 <span class="fc" id="L73">        int style = 0;</span>
 <span class="pc bpc" id="L74" title="1 of 2 branches missed.">        if (getOwner() != null) {</span>
 <span class="fc bfc" id="L75" title="All 2 branches covered.">            style = Model.getFacade().isAbstract(getOwner()) </span>
-                ? Font.ITALIC : Font.PLAIN;
+<span class="fc" id="L76">                ? Font.ITALIC : Font.PLAIN;</span>
         }
 <span class="fc" id="L78">        return super.getFigFontStyle() | style;</span>
     }

@@ -58,8 +58,8 @@ public abstract class ToDoItemAction extends UndoableAction {
      * @param hasIcon true if an icon is to be shown
      */
     public ToDoItemAction(String name, boolean hasIcon) {
-<span class="pc bpc" id="L61" title="1 of 2 branches missed.">        super(Translator.localize(name),</span>
-<span class="pc" id="L62">                hasIcon ? ResourceLoaderWrapper.lookupIcon(name) : null);</span>
+<span class="fc" id="L61">        super(Translator.localize(name),</span>
+<span class="pc bpc" id="L62" title="1 of 2 branches missed.">                hasIcon ? ResourceLoaderWrapper.lookupIcon(name) : null);</span>
         // Set the tooltip string:
 <span class="fc" id="L64">        putValue(Action.SHORT_DESCRIPTION, </span>
 <span class="fc" id="L65">                Translator.localize(name));</span>

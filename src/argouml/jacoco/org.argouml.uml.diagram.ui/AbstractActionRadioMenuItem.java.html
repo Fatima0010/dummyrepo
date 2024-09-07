@@ -62,8 +62,8 @@ abstract class AbstractActionRadioMenuItem extends UndoableAction {
      * @param hasIcon true if an icon should be shown
      */
     public AbstractActionRadioMenuItem(String key, boolean hasIcon) {
-<span class="nc bnc" id="L65" title="All 2 branches missed.">        super(Translator.localize(key),</span>
-<span class="nc" id="L66">        		hasIcon ? ResourceLoaderWrapper.lookupIcon(key) : null);</span>
+<span class="nc" id="L65">        super(Translator.localize(key),</span>
+<span class="nc bnc" id="L66" title="All 2 branches missed.">        		hasIcon ? ResourceLoaderWrapper.lookupIcon(key) : null);</span>
         // Set the tooltip string:
 <span class="nc" id="L68">        putValue(Action.SHORT_DESCRIPTION, </span>
 <span class="nc" id="L69">                Translator.localize(key));</span>

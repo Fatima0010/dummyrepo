@@ -148,8 +148,8 @@ public class StylePanel
      */
     public boolean shouldBeEnabled(Object target) {
 <span class="nc" id="L150">	ArgoDiagram diagram = DiagramUtils.getActiveDiagram();</span>
-<span class="nc bnc" id="L151" title="All 2 branches missed.">	target =</span>
-<span class="nc" id="L152">            (target instanceof Fig) ? target : diagram.getContainingFig(target);</span>
+	target =
+<span class="nc bnc" id="L152" title="All 2 branches missed.">            (target instanceof Fig) ? target : diagram.getContainingFig(target);</span>
 <span class="nc" id="L153">	return (target instanceof Fig);</span>
     }
 

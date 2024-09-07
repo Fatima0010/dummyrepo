@@ -2764,7 +2764,7 @@ import org.omg.uml.modelmanagement.UmlPackage;
 
     public void setReadOnly(Object handle, boolean isReadOnly) {
 <span class="nc bnc" id="L2766" title="All 2 branches missed.">        setChangeability(handle, isReadOnly ? ChangeableKindEnum.CK_FROZEN</span>
-                : ChangeableKindEnum.CK_CHANGEABLE);
+<span class="nc" id="L2767">                : ChangeableKindEnum.CK_CHANGEABLE);</span>
 <span class="nc" id="L2768">    }</span>
 
     public void setChild(Object handle, Object child) {
@@ -3163,15 +3163,15 @@ import org.omg.uml.modelmanagement.UmlPackage;
 
     public void setStatic(Object handle, boolean isStatic) {
 <span class="nc bnc" id="L3165" title="All 2 branches missed.">        if (handle instanceof Feature) {</span>
-<span class="nc bnc" id="L3166" title="All 2 branches missed.">            ((Feature) handle)</span>
-<span class="nc" id="L3167">                    .setOwnerScope(isStatic ? ScopeKindEnum.SK_CLASSIFIER</span>
-                            : ScopeKindEnum.SK_INSTANCE);
+<span class="nc" id="L3166">            ((Feature) handle)</span>
+<span class="nc bnc" id="L3167" title="All 2 branches missed.">                    .setOwnerScope(isStatic ? ScopeKindEnum.SK_CLASSIFIER</span>
+<span class="nc" id="L3168">                            : ScopeKindEnum.SK_INSTANCE);</span>
 <span class="nc" id="L3169">            return;</span>
         }
 <span class="nc bnc" id="L3171" title="All 2 branches missed.">        if (handle instanceof AssociationEnd) {</span>
-<span class="nc bnc" id="L3172" title="All 2 branches missed.">            ((AssociationEnd) handle)</span>
-<span class="nc" id="L3173">                    .setTargetScope(isStatic ? ScopeKindEnum.SK_CLASSIFIER</span>
-                            : ScopeKindEnum.SK_INSTANCE);
+<span class="nc" id="L3172">            ((AssociationEnd) handle)</span>
+<span class="nc bnc" id="L3173" title="All 2 branches missed.">                    .setTargetScope(isStatic ? ScopeKindEnum.SK_CLASSIFIER</span>
+<span class="nc" id="L3174">                            : ScopeKindEnum.SK_INSTANCE);</span>
 <span class="nc" id="L3175">            return;</span>
         }
 <span class="nc" id="L3177">        throw new IllegalArgumentException(&quot;handle: &quot; + handle);</span>

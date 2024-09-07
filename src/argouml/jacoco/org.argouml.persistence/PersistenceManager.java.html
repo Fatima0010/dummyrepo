@@ -482,10 +482,10 @@ class MultitypeFileFilter extends FileFilter {
 <span class="nc" id="L482">        String extension = filter.getExtension();</span>
 <span class="nc bnc" id="L483" title="All 2 branches missed.">        if (!extensions.contains(extension)) {</span>
 <span class="nc" id="L484">            extensions.add(filter.getExtension());</span>
-<span class="nc bnc" id="L485" title="All 2 branches missed.">            desc =</span>
-                ((desc == null)
-                    ? &quot;&quot;
-                    : desc + &quot;, &quot;)
+<span class="nc" id="L485">            desc =</span>
+<span class="nc bnc" id="L486" title="All 2 branches missed.">                ((desc == null)</span>
+<span class="nc" id="L487">                    ? &quot;&quot;</span>
+<span class="nc" id="L488">                    : desc + &quot;, &quot;)</span>
                 + &quot;*.&quot; + extension;
         }
 <span class="nc" id="L491">    }</span>

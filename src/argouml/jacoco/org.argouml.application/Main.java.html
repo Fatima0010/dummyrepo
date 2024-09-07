@@ -684,17 +684,17 @@ import org.argouml.util.logging.SimpleTimer;
 
 <span class="nc" id="L685">            CommandLineInterface clio = (CommandLineInterface) o;</span>
 
-<span class="nc bnc" id="L687" title="All 2 branches missed.">            System.out.println(&quot;Performing command &quot;</span>
+<span class="nc" id="L687">            System.out.println(&quot;Performing command &quot;</span>
                     + commandName + &quot;( &quot;
-                    + (commandArgument == null
-                            ? &quot;&quot; : commandArgument) + &quot; )&quot;);
+<span class="nc bnc" id="L689" title="All 2 branches missed.">                    + (commandArgument == null</span>
+<span class="nc" id="L690">                            ? &quot;&quot; : commandArgument) + &quot; )&quot;);</span>
 <span class="nc" id="L691">            boolean result = clio.doCommand(commandArgument);</span>
 <span class="nc bnc" id="L692" title="All 2 branches missed.">            if (!result) {</span>
-<span class="nc bnc" id="L693" title="All 2 branches missed.">                System.out.println(&quot;There was an error executing &quot;</span>
+<span class="nc" id="L693">                System.out.println(&quot;There was an error executing &quot;</span>
                         + &quot;the command &quot;
                         + commandName + &quot;( &quot;
-                        + (commandArgument == null
-                                ? &quot;&quot; : commandArgument) + &quot; )&quot;);
+<span class="nc bnc" id="L696" title="All 2 branches missed.">                        + (commandArgument == null</span>
+<span class="nc" id="L697">                                ? &quot;&quot; : commandArgument) + &quot; )&quot;);</span>
 <span class="nc" id="L698">                System.out.println(&quot;Aborting the rest of the commands.&quot;);</span>
 <span class="nc" id="L699">                return;</span>
             }
@@ -847,7 +847,7 @@ import org.argouml.util.logging.SimpleTimer;
 <span class="nc" id="L847">        pb.setSize(w, h);</span>
 <span class="nc bnc" id="L848" title="All 2 branches missed.">        pb.setExtendedState(Configuration.getBoolean(</span>
                 Argo.KEY_SCREEN_MAXIMIZED, false)
-                ? Frame.MAXIMIZED_BOTH : Frame.NORMAL);
+<span class="nc" id="L850">                ? Frame.MAXIMIZED_BOTH : Frame.NORMAL);</span>
 
 <span class="nc" id="L852">        UIManager.put(&quot;Button.focusInputMap&quot;, new UIDefaults.LazyInputMap(</span>
                 new Object[] {

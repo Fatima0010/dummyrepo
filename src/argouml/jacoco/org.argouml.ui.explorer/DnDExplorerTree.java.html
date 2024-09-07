@@ -267,8 +267,8 @@ public class DnDExplorerTree
          * (but not under the icon if any).
          */
 <span class="nc" id="L269">        Icon icon = lbl.getIcon();</span>
-<span class="nc bnc" id="L270" title="All 2 branches missed.">        int nStartOfText =</span>
-            (icon == null) ? 0
+        int nStartOfText =
+<span class="nc bnc" id="L271" title="All 2 branches missed.">            (icon == null) ? 0</span>
 <span class="nc" id="L272">                : icon.getIconWidth() + lbl.getIconTextGap();</span>
         /* Make the gradient ghostlike: */
 <span class="nc" id="L274">        g2.setComposite(AlphaComposite.getInstance(</span>
@@ -496,11 +496,11 @@ public class DnDExplorerTree
         // bottom, just return the first or last row respectively.
 
         // Is row at top of screen?
-<span class="nc bnc" id="L499" title="All 4 branches missed.">        nRow =</span>
-            (pt.y + raOuter.y &lt;= AUTOSCROLL_MARGIN)
+        nRow =
+<span class="nc bnc" id="L500" title="All 2 branches missed.">            (pt.y + raOuter.y &lt;= AUTOSCROLL_MARGIN)</span>
                 ?
                 // Yes, scroll up one row
-                (nRow &lt;= 0 ? 0 : nRow - 1)
+<span class="nc bnc" id="L503" title="All 2 branches missed.">                (nRow &lt;= 0 ? 0 : nRow - 1)</span>
                 :
                     // No, scroll down one row
 <span class="nc bnc" id="L506" title="All 2 branches missed.">                    (nRow &lt; getRowCount() - 1 ? nRow + 1 : nRow);</span>
@@ -716,8 +716,8 @@ public class DnDExplorerTree
                     }
 <span class="nc" id="L717">                    LOG.log(Level.FINE, &quot;No valid Drag: &quot;</span>
 <span class="nc bnc" id="L718" title="All 2 branches missed.">                            + (Model.getFacade().isAUMLElement(dest)</span>
-                                    ? name + &quot; not a namespace.&quot;
-                                    :  &quot; not a UML element.&quot;));
+<span class="nc" id="L719">                                    ? name + &quot; not a namespace.&quot;</span>
+<span class="nc" id="L720">                                    :  &quot; not a UML element.&quot;));</span>
                 }
 <span class="nc" id="L722">                dropTargetDragEvent.rejectDrag();</span>
 <span class="nc" id="L723">                return;</span>
